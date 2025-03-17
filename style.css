@@ -18,9 +18,9 @@ body {
 h1 {
     position: fixed;
     top: 1%;
-    right: 32%;
+    right: 28%;
     justify-content: space-around;
-    font-size: 6rem;
+    font-size: 5rem;
     color: #0044ff;
     font-family: 'arial';
 }
