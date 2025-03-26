@@ -1,9 +1,9 @@
-// Atualiza o relógio com horário da França (UTC+1 ou UTC+2 no horário de verão)
+// Atualiza o relógio com horário NY (UTC-1 ou UTC-2 no horário de verão)
 setInterval(function relog() {
     let rel = document.getElementById('relogio01');
     let data = new Date();
     data.setUTCSeconds(data.getUTCSeconds() + 19); // ajusta os seguntos )
-    data.setUTCHours(data.getUTCHours() - 1); // França UTC+1 (ou UTC+2 no horário de verão automático)
+    data.setUTCHours(data.getUTCHours() - 1); // NY UTC-1 (ou UTC-2 no horário de verão automático)
     let h = data.getHours();
     let m = data.getMinutes();
     let s = data.getSeconds();
@@ -44,11 +44,11 @@ function exibirDataAtualizada() {
     document.getElementById("date").innerHTML = `${semanas[diasem]}, ${dia} ${meses[mes]}, ${ano}`;
 }
 
-// Atualiza a data à meia-noite na França
+// Atualiza a data à meia-noite NY
 function atualizarData() {
     let data = new Date();
-    data.setUTCSeconds(data.getUTCSeconds() + 19); // Ajuste para o horário da França
-    data.setUTCHours(data.getUTCHours() - 1); // Ajuste para o horário da França
+    data.setUTCSeconds(data.getUTCSeconds() + 19); // Ajuste para o horário NY
+    data.setUTCHours(data.getUTCHours() - 1); // Ajuste para o horário NY
     let horas = data.getHours();
     let minutos = data.getMinutes();
     let segundos = data.getSeconds();
